@@ -1,0 +1,332 @@
+//
+.app-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+table {
+	width: 100%;
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 5px #ccc;
+	border-collapse: collapse;
+
+	input, textarea {
+		margin-bottom: 0;
+	}
+	
+	td,
+	th {
+		padding: 10px;
+		text-align: center;
+
+		img {
+			width: 100px;
+		}
+	}
+
+	th {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: solid 1px #ccc;
+		background: #1779ba;
+		color: white;
+		font-size: 16px;
+		text-align: center !important;
+	}
+
+	.td-header {
+		background: #1779ba;
+		color: white;
+		font-size: 16px;
+		border-bottom: solid 1px #f1f1f1;
+	}
+
+}
+
+input[name="product_price"] {
+	text-align: right;
+}
+
+textarea[name="product_addtional-info"] {
+	width: 100%;
+}
+
+.message {
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.genemco-add-popup {
+	width: 450px;
+}
+
+.pagination-wrapper {
+	position: relative;
+    display: block;
+    margin-bottom: 10px;
+
+    &.active {
+	    .pagination-list {
+			visibility: visible;
+			opacity: 1;		
+	    }
+	}
+
+	.pagination-text {
+		border: solid 1px #ccc;
+		padding: 4px 8px;
+		border-radius: 5px;
+		display: inline-block;
+		cursor: pointer;
+		font-size: 0.9em;
+	}
+
+	.pagination-list {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		top: calc(100% + 4px);
+		width: 150px;
+		background: white;
+		border: solid 1px #777;
+		padding: 10px;
+		transition: all ease-in-out .3s;
+
+		a {
+			display: block;
+			color: #000;
+			padding: 5px;
+			transition: all ease-in-out .2s;
+
+			&:hover,
+			&:focus {
+				color: #777;
+			}
+		}
+	}
+}
+
+.pagination .page-link {
+	padding: .1875rem .625rem;
+}
+
+.pagination .disabled {
+	padding: 0 !important;
+}
+
+.page-item.active {
+	background: #1779ba;
+	color: #fff;
+}
+
+#status {
+	text-align-last: center;
+	max-width: 185px;
+	margin-bottom: 0;
+	height: 35px;
+}
+
+/*
+** New admin style
+*/
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: solid 2px #999;
+	padding: 25px 0;
+	margin-bottom: 50px;
+}
+
+.header-logo {
+  	max-width: 200px;
+}
+
+ul.header-menu {
+	list-style: none;
+	margin: 0;
+	display: flex;
+}
+
+ul.header-menu a {
+	padding: 15px;
+}
+
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea, select {
+	margin-bottom: 0 !important;
+}
+
+a#add_new_quote {
+	margin-top: 30px;
+	display: inline-block;
+	float: right;
+	font-size: 20px;
+}
+
+.tabs-title a:focus-visible {
+	outline: none;
+}
+
+.product-price-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.product-price-wrapper:before {
+	content: '$';
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(10px, 50%);
+}
+
+textarea[name="admin_note"] {
+	height: 200px;
+}
+
+a.product-save,
+a.product-history,
+a.product-approve,
+a.product-remove {
+	display: block;
+}
+
+.edit-customer-details-popup {
+	max-width: 610px !important;
+	width: 100%;
+}
+
+.edit-customer-details-popup form > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.edit-customer-details-popup form > div > div {
+	flex-basis: 250px;
+}
+
+.genemco-add-popup {
+	min-width: 80%;
+}
+
+.new_quote_popup {
+	max-width: 610px !important;	
+	overflow: visible !important;
+	width: 100%;
+}
+
+input[type="radio"] {
+	outline: none;
+}
+
+.new_quote_popup .search_customer_result {
+    padding: 10px 0;
+}
+
+.new_quote_popup .search_customer_result div[data-userid] {
+	display: inline-block;
+	background-color: #ccc;
+	padding: 5px 10px;
+	border-radius: 20px;
+}
+
+.new_quote_popup .search_customer,
+.new_quote_popup .search_products {
+	position: relative;
+}
+
+.new_quote_popup .customer_search_result_popup,
+.new_quote_popup .search_products_result_popup {
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	box-shadow: 0 0 5px #000;
+	top: 65px;
+	z-index: 1;
+}
+
+.new_quote_popup .search_products_result_popup {
+	max-height: 300px;
+	overflow: auto;
+}
+
+.new_quote_popup .customer_search_result_popup > div {
+	cursor: pointer;
+	padding: 10px;
+}
+
+.new_quote_popup .search_products_result_popup > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.new_quote_popup .search_products_result_popup > div > div {
+	padding-left: 20px;
+}
+
+.new_quote_popup .search_products_results {
+	max-height: 350px;
+	overflow: auto;
+	margin-top: 20px;
+}
+
+.new_quote_popup .search_products_results > div {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.new_quote_popup .search_products_results > div > div {
+	padding-left: 30px;
+}
+
+.new_quote_popup .search_products_results .remove {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.new_quote_popup .search_products_results .remove:before {
+	content: '+';
+	transform: rotate(45deg);
+	font-size: 25px;
+}
+
+.new_quote_popup a.confirm {
+	margin-top: 30px;
+}
+
+.new_quote_popup > div {
+	margin-bottom: 25px;
+}
+
+.new_quote_popup .guest_form form > div > div {
+	margin-bottom: 25px;
+}
+
+a.button[data-status="yes"] {
+	background-color: #828282;
+}
+
+#hubspot-settings table th {
+	text-align: right !important;
+	padding-right: 20px;
+}
