@@ -24,6 +24,7 @@ permissions:
   - object: /var/www/app.genemco.com/storage
     pattern: "**"
     owner: root
+    group: root
     mode: 777
     type:
       - directory
@@ -32,6 +33,7 @@ permissions:
   - object: /var/www/app.genemco.com/storage/framework
     pattern: "**"
     owner: root
+    group: root
     mode: 777
     type:
       - directory
@@ -40,6 +42,7 @@ permissions:
   - object: /var/www/app.genemco.com/storage/framework/views
     pattern: "**"
     owner: root
+    group: root
     mode: 777
     type:
       - directory
