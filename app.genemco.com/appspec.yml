@@ -8,30 +8,15 @@ permissions:
   - object: /var/www/app.genemco.com/
     pattern: "**"
     owner: root
-    mode: 775
-    type:
-      - directory
-
-permissions:
-  - object: /var/www/app.genemco.com/storage/
-    pattern: "logs"
-    owner: root
     mode: 777
     type:
       - directory
 
 permissions:
-  - object: /var/www/app.genemco.com/storage/logs/
-    pattern: "*.log"
-    owner: root
-    mode: 777
-    type:
-      - file
-
-permissions:
-  - object: /var/www/app.genemco.com/bootstrap/
+  - object: /var/www/
     pattern: "**"
     owner: root
     mode: 777
     type:
       - directory
+
