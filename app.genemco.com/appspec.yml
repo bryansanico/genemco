@@ -5,7 +5,7 @@ files:
     destination: /var/www/app.genemco.com/
 
 permissions:
-  - object: /var/www/*
+  - object: /var/www/app.genemco.com/
     pattern: "**"
     owner: root
     mode: 775
