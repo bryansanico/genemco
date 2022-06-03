@@ -14,7 +14,7 @@ permissions:
 
 permissions:
   - object: /var/www/app.genemco.com/storage/logs/
-    pattern: "laravel.log"
+    pattern: "*.log"
     owner: root
     mode: 777
     type:
