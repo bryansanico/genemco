@@ -14,11 +14,11 @@ permissions:
 
 permissions:
   - object: /var/www/app.genemco.com/storage/logs/
-    pattern: "**"
+    pattern: "*laravel.log"
     owner: root
     mode: 777
     type:
-      - directory
+      - file
 
 permissions:
   - object: /var/www/app.genemco.com/bootstrap/
