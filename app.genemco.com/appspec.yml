@@ -4,6 +4,7 @@ files:
   - source: /
     destination: /var/www/app.genemco.com/
 
+permissions:
   - object: /var/www/*
     pattern: "**"
     owner: root
