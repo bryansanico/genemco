@@ -21,12 +21,20 @@ permissions:
       - directory
 
 permissions:
-  - object: /var/www/app.genemco.com/storage/framework/sessions
+  - object: /var/www/app.genemco.com/storage
     pattern: "**"
     owner: root
     mode: 777
     type:
-      - file
+      - directory
+
+permissions:
+  - object: /var/www/app.genemco.com/storage/framework
+    pattern: "**"
+    owner: root
+    mode: 777
+    type:
+      - directory
 
 permissions:
   - object: /var/www/app.genemco.com/storage/logs
