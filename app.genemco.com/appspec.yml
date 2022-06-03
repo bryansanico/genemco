@@ -3,3 +3,10 @@ os: linux
 files:
   - source: /
     destination: /var/www/app.genemco.com/
+
+  - object: /var/www/app.genemco.com/
+    pattern: "**"
+    owner: root
+    mode: 775
+    type:
+      - directory
