@@ -13,6 +13,14 @@ permissions:
       - directory
 
 permissions:
+  - object: /var/www/app.genemco.com/storage/
+    pattern: "**"
+    owner: root
+    mode: 777
+    type:
+      - directory
+
+permissions:
   - object: /var/www/app.genemco.com/storage/logs/
     pattern: "*.log"
     owner: root
