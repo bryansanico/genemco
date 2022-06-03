@@ -20,10 +20,10 @@ permissions:
     type:
       - directory
 
-permissions:
-  - object: /var/www/app.genemco.com/storage/logs
-    pattern: "**"
-    owner: root
-    mode: 777
-    type:
-      - file
+        #permissions:
+        #- object: /var/www/app.genemco.com/storage/logs
+        #pattern: "**"
+        #owner: root
+        #mode: 777
+        #type:
+        #- file
