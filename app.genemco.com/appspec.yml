@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/app.genemco.com
+    destination: /var/www/app.genemco.com/
 
 permissions:
-  - object: /var/www/app.genemco.com
+  - object: /var/www/app.genemco.com/
     pattern: "**"
     owner: root
     mode: 777
@@ -13,7 +13,7 @@ permissions:
       - directory
 
 permissions:
-  - object: /var/www
+  - object: /var/www/
     pattern: "**"
     owner: root
     mode: 777
