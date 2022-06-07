@@ -85,7 +85,7 @@ return [
     |
     */
 
-    'app_name' => env('SHOPIFY_APP_NAME', 'Genemco'),
+    'app_name' => env('SHOPIFY_APP_NAME', 'Genemco staging'),
 
     /*
     |--------------------------------------------------------------------------
@@ -98,7 +98,7 @@ return [
     |
     */
 
-    'api_version' => env('SHOPIFY_API_VERSION', '2020-01'),
+    'api_version' => env('SHOPIFY_API_VERSION', '2022-04'),
 
     /*
     |--------------------------------------------------------------------------
@@ -109,7 +109,7 @@ return [
     |
     */
 
-    'api_key' => env('SHOPIFY_API_KEY', '862d2534c4dfa29f1cf31860c10f7034'),
+    'api_key' => env('SHOPIFY_API_KEY', '48dc2ac1ff86bb875e2ed9e0cc839c43'),
 
     /*
     |--------------------------------------------------------------------------
@@ -120,7 +120,7 @@ return [
     |
     */
 
-    'api_secret' => env('SHOPIFY_API_SECRET', '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'),
+    'api_secret' => env('SHOPIFY_API_SECRET', '77b248d4367cbc6b4cd27a0538d2a6a7'),
 
     /*
     |--------------------------------------------------------------------------
@@ -270,7 +270,7 @@ return [
             // ]
             [
                 'topic' => env('SHOPIFY_WEBHOOK_1_TOPIC', 'customers/create'),
-                'address' => env('SHOPIFY_WEBHOOK_1_ADDRESS', 'https://app.genemco.com/webhook/customers-create')
+                'address' => env('SHOPIFY_WEBHOOK_1_ADDRESS', 'https://staging.genemco.com/webhook/customers-create')
             ]
     ],
 
